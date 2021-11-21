@@ -13,5 +13,6 @@ Select SSH and GPG keys
 Click New SSH key
 Enter a title in the field
 Paste your public key into the Key field
-Click Add SSH key
+Click Add SSH key////
+new line
 
