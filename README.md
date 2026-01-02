@@ -27,21 +27,24 @@ This repository is now configured for use with Claude Sonnet AI assistant in Vis
 
 ## SSH Key Setup (for GitHub)
 
-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
-Token_Display_System is ver new and mine
-SSH command generation
-: ssh-keygen -t rsa -b 4096 -C "joe@example.com"
-Press Enter to accept the default file location.
-Enter a secure passphrase.
-Press Enter.
-Enter this command to display the contents of your public key:
-Copy the contents of your key to your clipboard (we will need it later).
-Log into your GitHub account.
-Click your avatar and choose Settings
-Select SSH and GPG keys
-Click New SSH key
-Enter a title in the field
-Paste your public key into the Key field
-Click Add SSH key////
-new line
-hi.....
+Token_Display_System is very new and mine
+SSH command generation:
+
+Generate SSH key:
+```bash
+ssh-keygen -t rsa -b 4096 -C "joe@example.com"
+```
+
+Steps:
+1. Press Enter to accept the default file location.
+2. Enter a secure passphrase.
+3. Press Enter.
+4. Enter this command to display the contents of your public key.
+5. Copy the contents of your key to your clipboard (we will need it later).
+6. Log into your GitHub account.
+7. Click your avatar and choose Settings.
+8. Select SSH and GPG keys.
+9. Click New SSH key.
+10. Enter a title in the field.
+11. Paste your public key into the Key field.
+12. Click Add SSH key.
