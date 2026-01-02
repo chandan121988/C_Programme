@@ -21,8 +21,12 @@ def write_csv(filename, data, headers=None):
         bool: True if successful, False otherwise
     """
     try:
+        if not data:
+            print(f"✗ Error: No data provided to write")
+            return False
+        
         with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
-            if data and isinstance(data[0], dict):
+            if isinstance(data[0], dict):
                 # If data is a list of dictionaries
                 writer = csv.DictWriter(csvfile, fieldnames=data[0].keys())
                 writer.writeheader()
@@ -122,13 +126,19 @@ def append_csv(filename, data):
             print(f"✗ Error: File '{filename}' not found. Use write_csv() to create a new file.")
             return False
         
+        if not data:
+            print(f"✗ Error: No data provided to append")
+            return False
+        
+        # For dictionary data, read fieldnames first before opening in append mode
+        fieldnames = None
+        if isinstance(data[0], dict):
+            with open(filename, 'r', newline='', encoding='utf-8') as readfile:
+                reader = csv.DictReader(readfile)
+                fieldnames = reader.fieldnames
+        
         with open(filename, 'a', newline='', encoding='utf-8') as csvfile:
-            if data and isinstance(data[0], dict):
-                # Get headers from existing file
-                with open(filename, 'r', newline='', encoding='utf-8') as readfile:
-                    reader = csv.DictReader(readfile)
-                    fieldnames = reader.fieldnames
-                
+            if fieldnames:
                 writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                 writer.writerows(data)
             else:
