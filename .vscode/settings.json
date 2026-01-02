@@ -1,0 +1,26 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  
+  // C/C++ specific settings
+  "C_Cpp.default.cppStandard": "c++17",
+  "C_Cpp.default.cStandard": "c11",
+  "C_Cpp.default.intelliSenseMode": "gcc-x64",
+  
+  // Claude AI integration settings
+  "continue.enableTabAutocomplete": true,
+  "continue.telemetryEnabled": false,
+  
+  // Editor settings for better AI assistance
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggestSelection": "first",
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  }
+}
