@@ -1,0 +1,49 @@
+{
+  "models": [
+    {
+      "title": "Claude Sonnet",
+      "provider": "anthropic",
+      "model": "claude-3-5-sonnet-20241022",
+      "apiKey": ""
+    }
+  ],
+  "tabAutocompleteModel": {
+    "title": "Claude Sonnet Autocomplete",
+    "provider": "anthropic",
+    "model": "claude-3-5-sonnet-20241022",
+    "apiKey": ""
+  },
+  "allowAnonymousTelemetry": false,
+  "docs": [],
+  "customCommands": [
+    {
+      "name": "explain",
+      "prompt": "Explain how this code works in detail",
+      "description": "Explain the selected code"
+    },
+    {
+      "name": "debug",
+      "prompt": "Help me debug this code. Find any potential bugs or issues.",
+      "description": "Debug the selected code"
+    },
+    {
+      "name": "optimize",
+      "prompt": "Optimize this code for better performance while maintaining readability.",
+      "description": "Optimize the selected code"
+    }
+  ],
+  "contextProviders": [
+    {
+      "name": "diff",
+      "params": {}
+    },
+    {
+      "name": "open",
+      "params": {}
+    },
+    {
+      "name": "terminal",
+      "params": {}
+    }
+  ]
+}

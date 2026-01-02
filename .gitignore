@@ -1,0 +1,51 @@
+# Compiled Object files
+*.o
+*.obj
+*.elf
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Debug files
+*.dSYM/
+*.su
+
+# IDE and Editor files
+.vscode/*.log
+.vscode/.ropeproject
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Continue extension user config (contains API keys)
+.continue/
+~/.continue/
+.vscode/continue_user_config.json
+
+# API Keys and Secrets
+.env
+*.key
+*.pem
+api_keys.txt
+
+# Build directories
+build/
+dist/
+bin/
+
+# Backup files
+*.backup
+*.bak
+*.old
